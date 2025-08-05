@@ -1,0 +1,330 @@
+.recommendations-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 30%, #3b82f6 60%, #ec4899 100%);
+  padding: 20px;
+}
+
+.recommendations-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.2);
+  border: 2px solid rgba(59, 130, 246, 0.1);
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.recommendations-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #1e3a8a, #3b82f6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 5px rgba(30, 58, 138, 0.5));
+  }
+  to {
+    filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.8));
+  }
+}
+
+.recommendations-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.song-player {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.song-info-header {
+  margin-bottom: 25px;
+}
+
+.song-info-header .song-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+.song-info-header .song-artist {
+  font-size: 1.3rem;
+  color: #3b82f6;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.song-description {
+  font-size: 1rem;
+  color: #666;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.song-cover {
+  position: relative;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.song-cover img {
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(45deg, #1e3a8a, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(30, 58, 138, 0.4);
+}
+
+.play-button:hover {
+  background: linear-gradient(45deg, #1e40af, #2563eb);
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 12px 30px rgba(30, 58, 138, 0.6);
+}
+
+.audio-controls {
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(30, 58, 138, 0.08);
+  border-radius: 15px;
+  border: 1px solid rgba(30, 58, 138, 0.15);
+}
+
+.time-display {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: bold;
+}
+
+.seek-bar-container {
+  margin-bottom: 15px;
+}
+
+.seek-bar {
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  background: #f3f4f6;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.seek-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #1e3a8a, #3b82f6);
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.seek-bar::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #1e3a8a, #3b82f6);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.control-btn {
+  background: linear-gradient(45deg, #1e3a8a, #3b82f6);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(30, 58, 138, 0.3);
+}
+
+.control-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(30, 58, 138, 0.4);
+}
+
+.control-btn:active {
+  transform: translateY(0);
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.volume-control span {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.volume-bar {
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  background: #f3f4f6;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.volume-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ec4899, #be185d);
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.volume-bar::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ec4899, #be185d);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.song-counter {
+  font-size: 1rem;
+  color: #666;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(30, 58, 138, 0.1);
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.action-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 180px;
+}
+
+.action-button.try-again {
+  background: linear-gradient(45deg, #1e3a8a, #3b82f6);
+  color: white;
+}
+
+.action-button.discover {
+  background: linear-gradient(45deg, #ec4899, #be185d);
+  color: white;
+}
+
+.action-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.action-button:active {
+  transform: translateY(-1px);
+}
+
+.loading {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 30%, #3b82f6 60%, #ec4899 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .recommendations-container {
+    padding: 20px;
+  }
+  
+  .recommendations-title {
+    font-size: 2rem;
+  }
+  
+  .song-cover img {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .control-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .action-button {
+    width: 100%;
+    max-width: 300px;
+  }
+} 

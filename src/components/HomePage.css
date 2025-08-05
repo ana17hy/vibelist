@@ -1,0 +1,73 @@
+.home-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 30%, #3b82f6 60%, #ec4899 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.home-content {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 60px 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.app-title {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #1e3a8a, #3b82f6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.5));
+  }
+  to {
+    filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.8));
+  }
+}
+
+.app-description {
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.app-description p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.start-button {
+  background: linear-gradient(45deg, #1e3a8a, #3b82f6);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(30, 58, 138, 0.3);
+}
+
+.start-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(30, 58, 138, 0.4);
+}
+
+.start-button:active {
+  transform: translateY(-1px);
+} 
