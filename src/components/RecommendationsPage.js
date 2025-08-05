@@ -50,6 +50,22 @@ const recommendedSongs = [
     cover: "/music/covers/song6.jpeg",
     audioUrl: "/music/song6.mp3",
     description: "La mejor de Daniel Caesar"
+  },
+  {
+    id: 7,
+    title: "Saturn",
+    artist: "Sza",
+    cover: "/music/covers/song7.jpeg",
+    audioUrl: "/music/song7.mp3",
+    description: "Te amo sza"
+  },
+  {
+    id: 8,
+    title: "Best Part",
+    artist: "Daniel Caesar",
+    cover: "/music/covers/song8.jpeg",
+    audioUrl: "/music/song8.mp3",
+    description: "la mejor canción de amor"
   }
 ];
 
