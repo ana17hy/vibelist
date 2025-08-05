@@ -2,18 +2,13 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './MusicPage.css';
 
-// INSTRUCCIONES PARA AGREGAR TUS CANCIONES:
-// 1. Coloca tus archivos MP3 en: public/music/
-// 2. Coloca tus imágenes JPEG en: public/music/covers/
-// 3. Actualiza el array sampleSongs abajo con tus archivos
-
 const sampleSongs = [
   {
     id: 1,
     title: "Get You",
     artist: "Daniel Caesar",
-    cover: "/music/covers/song1.jpeg", // Tu imagen JPEG aquí
-    audioUrl: "/music/song1.mp3" // Tu archivo MP3 aquí
+    cover: "/music/covers/song1.jpeg", 
+    audioUrl: "/music/song1.mp3" 
   },
   {
     id: 2,
@@ -59,10 +54,31 @@ const sampleSongs = [
   },
   {
     id: 8,
-    title: "Sweet Child O' Mine",
-    artist: "Guns N' Roses",
-    cover: "/music/covers/song4.jpeg",
-    audioUrl: "/music/song4.mp3"
+    title: "Best Part",
+    artist: "Daniel Caesar",
+    cover: "/music/covers/song8.jpeg",
+    audioUrl: "/music/song8.mp3"
+  },
+  {
+    id: 9,
+    title: "Matilda",
+    artist: "Harry Styles",
+    cover: "/music/covers/song9.jpeg",
+    audioUrl: "/music/song9.mp3"
+  },
+  {
+    id: 10,
+    title: "18+1",
+    artist: "Alvaro Diaz",
+    cover: "/music/covers/song10.jpeg",
+    audioUrl: "/music/song10.mp3"
+  },
+  {
+    id: 11,
+    title: "Mirrorball",
+    artist: "Taylor Swift",
+    cover: "/music/covers/song11.jpeg",
+    audioUrl: "/music/song11.mp3"
   }
 ];
 

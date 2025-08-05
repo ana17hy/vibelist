@@ -61,11 +61,11 @@ const recommendedSongs = [
   },
   {
     id: 8,
-    title: "Best Part",
-    artist: "Daniel Caesar",
-    cover: "/music/covers/song8.jpeg",
-    audioUrl: "/music/song8.mp3",
-    description: "la mejor canción de amor"
+    title: "18+1",
+    artist: "Alvaro Diaz",
+    cover: "/music/covers/song10.jpeg",
+    audioUrl: "/music/song10.mp3",
+    description: "temazo de alvarito"
   }
 ];
 
