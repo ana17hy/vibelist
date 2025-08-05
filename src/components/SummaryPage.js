@@ -33,23 +33,23 @@ function SummaryPage() {
         <div className="stats-container">
           <div className="stat-card">
             <div className="stat-number">{likedSongs.length}</div>
-            <div className="stat-label">Canciones que te gustaron</div>
+            <div className="stat-label">Canciones que te gustaron :D</div>
           </div>
           
           <div className="stat-card">
             <div className="stat-number">{dislikedSongs.length}</div>
-            <div className="stat-label">Canciones que no te gustaron</div>
+            <div className="stat-label">Canciones que no te gustaron D:</div>
           </div>
           
           <div className="stat-card">
             <div className="stat-number">{likePercentage}%</div>
-            <div className="stat-label">Porcentaje de aprobación</div>
+            <div className="stat-label">Porcentaje de favs :p</div>
           </div>
         </div>
 
         {likedSongs.length > 0 && (
           <div className="liked-songs">
-            <h2>🎵 Canciones que te gustaron:</h2>
+            <h2>🦔 Canciones que te gustaron:</h2>
             <div className="songs-grid">
               {likedSongs.map(song => (
                 <div key={song.id} className="song-item liked">
@@ -66,7 +66,7 @@ function SummaryPage() {
 
         {dislikedSongs.length > 0 && (
           <div className="disliked-songs">
-            <h2>👎 Canciones que no te gustaron:</h2>
+            <h2>🗿 Canciones que no te gustaron (pero deberias escuchar jjj):</h2>
             <div className="songs-grid">
               {dislikedSongs.map(song => (
                 <div key={song.id} className="song-item disliked">

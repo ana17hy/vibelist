@@ -52,10 +52,10 @@ const sampleSongs = [
   },
   {
     id: 7,
-    title: "Hey Jude",
-    artist: "The Beatles",
-    cover: "/music/covers/song5.jpeg",
-    audioUrl: "/music/song5.mp3"
+    title: "Saturn",
+    artist: "Sza",
+    cover: "/music/covers/song7.jpeg",
+    audioUrl: "/music/song7.mp3"
   },
   {
     id: 8,
@@ -288,13 +288,13 @@ function MusicPage() {
               className="rating-button dislike" 
               onClick={() => handleRating('dislike')}
             >
-              👎 No me gusta
+              💔 Skip
             </button>
             <button 
               className="rating-button like" 
               onClick={() => handleRating('like')}
             >
-              👍 Me gusta
+              ❤️‍🔥 Like
             </button>
           </div>
         </div>

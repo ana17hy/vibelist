@@ -14,12 +14,13 @@ function HomePage() {
       <div className="home-content">
         <h1 className="app-title">vibelist</h1>
         <div className="app-description">
-          <p>Descubre tu próximo hit favorito</p>
-          <p>Te presentamos 6 canciones seleccionadas especialmente para ti</p>
-          <p>¡Dale like a las que te gusten y encuentra tu nueva música!</p>
+          <p>Holi 🌷</p>
+          <p>Acá te dejo 6 canciones que me encantan y siento que podrían gustarte :D</p>
+          <p>dale like a las que vibren contigo y skip a las que no...</p>
+          <p>al final te muestro tu resumen musical 🎧</p>
         </div>
         <button className="start-button" onClick={handleStart}>
-          Comenzar
+        🌟 let's gooo
         </button>
       </div>
     </div>

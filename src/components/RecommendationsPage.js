@@ -2,11 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './RecommendationsPage.css';
 
-// INSTRUCCIONES PARA AGREGAR TUS RECOMENDACIONES:
-// 1. Coloca tus archivos MP3 en: public/music/
-// 2. Coloca tus imágenes JPEG en: public/music/covers/
-// 3. Actualiza el array recommendedSongs abajo con tus canciones favoritas
-
 const recommendedSongs = [
   {
     id: 1,
@@ -14,7 +9,7 @@ const recommendedSongs = [
     artist: "Daniel Caesar",
     cover: "/music/covers/song1.jpeg",
     audioUrl: "/music/song1.mp3",
-    description: "Una canción romántica perfecta para relajarte"
+    description: "Simplemente TEMÓN"
   },
   {
     id: 2,
@@ -22,7 +17,7 @@ const recommendedSongs = [
     artist: "Daniel Caesar",
     cover: "/music/covers/song2.jpeg",
     audioUrl: "/music/song2.mp3",
-    description: "Vibes suaves y melódicos que te transportarán"
+    description: "Mi canción con Leo <3"
   },
   {
     id: 3,
@@ -30,7 +25,7 @@ const recommendedSongs = [
     artist: "Bruno Mars",
     cover: "/music/covers/song3.jpeg",
     audioUrl: "/music/song3.mp3",
-    description: "Una balada que te hará sentir todas las emociones"
+    description: "Muy buena para ser underrated"
   },
   {
     id: 4,
@@ -38,7 +33,7 @@ const recommendedSongs = [
     artist: "The Beatles",
     cover: "/music/covers/song4.jpeg",
     audioUrl: "/music/song4.mp3",
-    description: "Clásico atemporal que nunca pasa de moda"
+    description: "El solo de guitarra es increible"
   },
   {
     id: 5,
@@ -46,7 +41,7 @@ const recommendedSongs = [
     artist: "The Beatles",
     cover: "/music/covers/song5.jpeg",
     audioUrl: "/music/song5.mp3",
-    description: "Una joya escondida de los Beatles"
+    description: "Dice mi nombre asi que es mi cancion"
   },
   {
     id: 6,
@@ -54,7 +49,7 @@ const recommendedSongs = [
     artist: "Daniel Caesar",
     cover: "/music/covers/song6.jpeg",
     audioUrl: "/music/song6.mp3",
-    description: "R&B moderno con toques soul"
+    description: "La mejor de Daniel Caesar"
   }
 ];
 
@@ -186,8 +181,8 @@ function RecommendationsPage() {
     <div className="recommendations-page">
       <div className="recommendations-container">
         <div className="header-section">
-          <h1 className="recommendations-title">🎵 Canciones que deberías escuchar si o si!</h1>
-          <p className="recommendations-subtitle">Descubre tu gusto musical con estas joyas seleccionadas especialmente para ti</p>
+          <h1 className="recommendations-title"> Canciones que deberías escuchar si o si!!</h1>
+          <p className="recommendations-subtitle">Obviamente mis canciones fav son las que salieron antes jejeje</p>
         </div>
 
         <div className="song-player">
